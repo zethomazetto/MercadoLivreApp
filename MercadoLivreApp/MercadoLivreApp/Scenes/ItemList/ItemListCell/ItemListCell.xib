@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemListCell" rowHeight="117" id="KGk-i7-Jjw" customClass="ItemListCell" customModule="MercadoLivreApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nYp-5M-Myc">
+                        <rect key="frame" x="16" y="10" width="90" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="90" id="b5E-jL-mqp"/>
+                            <constraint firstAttribute="width" constant="90" id="whR-VB-qHT"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 1689,90" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSY-Zu-9ku">
+                        <rect key="frame" x="114" y="78" width="190" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smartphone Motorola Moto G6 Plus Xt1926 64gb Tela 5.9 Índigo" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="twB-Pi-udB">
+                        <rect key="frame" x="114" y="10" width="190" height="56.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nYp-5M-Myc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="2Hq-Ao-jQo"/>
+                    <constraint firstItem="JSY-Zu-9ku" firstAttribute="top" secondItem="twB-Pi-udB" secondAttribute="bottom" constant="11.5" id="41j-3t-cfR"/>
+                    <constraint firstAttribute="trailing" secondItem="JSY-Zu-9ku" secondAttribute="trailing" constant="16" id="4wi-9R-wAI"/>
+                    <constraint firstAttribute="bottom" secondItem="JSY-Zu-9ku" secondAttribute="bottom" constant="11" id="Cee-js-bQF"/>
+                    <constraint firstAttribute="trailing" secondItem="twB-Pi-udB" secondAttribute="trailing" constant="16" id="F0o-LR-N7x"/>
+                    <constraint firstAttribute="bottom" secondItem="twB-Pi-udB" secondAttribute="bottom" multiplier="1.5" constant="10" id="ODB-6H-qVj"/>
+                    <constraint firstItem="JSY-Zu-9ku" firstAttribute="leading" secondItem="nYp-5M-Myc" secondAttribute="trailing" constant="8" id="OeB-nq-qsM"/>
+                    <constraint firstItem="nYp-5M-Myc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="QlC-nd-MYw"/>
+                    <constraint firstItem="twB-Pi-udB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="n5Z-UH-WMw"/>
+                    <constraint firstItem="twB-Pi-udB" firstAttribute="leading" secondItem="nYp-5M-Myc" secondAttribute="trailing" constant="8" id="sZe-dG-gx6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="itemPriceLabel" destination="JSY-Zu-9ku" id="xeh-MH-U1J"/>
+                <outlet property="itemTitleLabel" destination="twB-Pi-udB" id="rEW-DO-3Az"/>
+                <outlet property="thumbnailImageView" destination="nYp-5M-Myc" id="JCe-Mm-UX0"/>
+            </connections>
+            <point key="canvasLocation" x="21.739130434782609" y="45.535714285714285"/>
+        </tableViewCell>
+    </objects>
+</document>
